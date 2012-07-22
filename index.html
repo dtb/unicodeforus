@@ -1,296 +1,12 @@
 <!doctype HTML>
 <html>
 	<head>
-		<title>Unicode For Us</title>
-		<style>
-			html, body, div, span, object, iframe,
-			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-			abbr, address, cite, code,
-			del, dfn, em, img, ins, kbd, q, samp,
-			small, strong, sub, sup, var,
-			b, i,
-			dl, dt, dd, ol, ul, li,
-			fieldset, form, label, legend,
-			table, caption, tbody, tfoot, thead, tr, th, td,
-			article, aside, canvas, details, figcaption, figure, 
-			footer, header, hgroup, menu, nav, section, summary,
-			time, mark, audio, video {
-					margin:0;
-					padding:0;
-					border:0;
-					outline:0;
-					font-size:100%;
-					vertical-align:baseline;
-					background:transparent;
-			}
-
-			body {
-					line-height:1;
-			}
-
-			article,aside,details,figcaption,figure,
-			footer,header,hgroup,menu,nav,section { 
-					display:block;
-			}
-
-			nav ul {
-					list-style:none;
-			}
-
-			blockquote, q {
-					quotes:none;
-			}
-
-			blockquote:before, blockquote:after,
-			q:before, q:after {
-					content:'';
-					content:none;
-			}
-
-			a {
-					margin:0;
-					padding:0;
-					font-size:100%;
-					vertical-align:baseline;
-					background:transparent;
-			}
-
-			/* change colours to suit your needs */
-			ins {
-					background-color:#ff9;
-					color:#000;
-					text-decoration:none;
-			}
-
-			/* change colours to suit your needs */
-			mark {
-					background-color:#ff9;
-					color:#000; 
-					font-style:italic;
-					font-weight:bold;
-			}
-
-			del {
-					text-decoration: line-through;
-			}
-
-			abbr[title], dfn[title] {
-					border-bottom:1px dotted;
-					cursor:help;
-			}
-
-			table {
-					border-collapse:collapse;
-					border-spacing:0;
-			}
-
-			/* change border colour to suit your needs */
-			hr {
-					display:block;
-					height:1px;
-					border:0;		
-					border-top:1px solid #cccccc;
-					margin:1em 0;
-					padding:0;
-			}
-		</style>		
-		<style>
-			body {
-				margin:5px 10px;
-			}
-			h1,h2,h3,h4,h5,h6 {
-				margin:.5em 0 .25em 0; 
-				line-height:1;
-				font-weight:bold;
-			}
-			p, ul, ol, dl {
-				margin:.2em 0 1em 0;
-			}
-			ul,ol,dl {
-				margin-top:1em;
-			}
-			blockquote{
-				margin: .75em 1.3em;
-			}
-
-			/*
-			* Lists
-			*/
-			ul {
-				list-style-type: circle;
-			}
-			ol {
-				list-style-type: decimal;
-			}
-			ul, ol {
-			}
-			ul ul, ol ul {
-				margin-top:.2em;
-			}
-			dd {
-				margin-left:1.3em;
-			}
-
-			/*
-			* basic typography
-			*/
-			body {
-				font-size:100%;
-				line-height:1.15em;
-				font-family:sans-serif;
-			}
-			body>*{
-				font-size:.875em;/* .875*16px=14px font-size:100% corresponds to 16px*/
-			}
-			h1{
-				font-size:1.3em;
-			}
-			h2{
-				font-size:1.2em;
-			}
-			h3{
-				font-size:1.1em;
-			}
-			h4 {
-				font-size:1em;
-			}
-			/*
-			* semantic inline elements
-			*/
-			abbr,acronym {
-				border-bottom: 1px dotted #AAA;
-			}
-			sub{
-				vertical-align: sub;
-				font-size:.8em;
-			}
-			sup{
-				vertical-align: super;
-				font-size:.8em;
-			}
-			/*
-			* Semantic elements and their equivalents
-			*/
-			samp, var, pre, code, tt{
-				font-family: monospace, monospace;
-				white-space: pre;
-			} 
-			s, del{
-				text-decoration: line-through;
-			} 
-			i, em, cite, dfn{
-				font-style: italic;
-			} 
-			b, strong, th{
-				font-weight: bold;
-			}
-			ins, u {
-				text-decoration: underline;
-			}
-			/*
-			* Non-semantic elements
-			*/
-			small {
-				font-size:.7em;
-			}
-			big {
-				font-size:1.3em;
-			}
-
-		</style>
-		<style>
-			h1 {
-
-			}
-			.cf:before,
-			.cf:after {
-					content: " "; /* 1 */
-					display: table; /* 2 */
-			}
-
-			.cf:after {
-					clear: both;
-			}
+		<meta charset='utf-8' />
+		<link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Sansita+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/restyle.css" />
+		<link rel="stylesheet" href="/style.css" />
 		
-			body {
-				font-family:sans-serif;
-				color:#333;
-				background:#f3f3f3 url("/images/extra_clean_paper-bg.png");
-			}
-			
-			nav > * {
-				height:60px;
-			}
-
-			nav > h1 {
-				float:left;
-				margin:0;
-				padding:0;
-				height:60px;
-			}
-
-			nav > ul {
-				float:right;
-				padding-left:0;
-				margin:0;
-			}
-			nav > ul li {
-				float:left;
-				list-style:none;
-				margin-left:20px;
-			}
-
-			header h2 {
-				line-height:1.4;
-				text-align:center;
-				font-size:36px;
-				font-weight:bold;
-			}
-
-			header h2 div {
-				font-size: 16px;
-				color: #5E5E5E;
-				font-weight: normal;
-				margin-top: 1em;
-			}
-
-
-			#promos li {
-				float:left;
-				width:300px;
-				font-size:20px;
-				list-style:none;
-				line-height:1.2;
-				margin-right:30px;
-			}
-			#promos li:last-child {
-				margin-right:0;
-			}
-			body > *:first-child {
-				margin-top:20px;
-			}
-
-			body > nav,
-			body > header,
-			body > footer,
-			body > section {
-				margin-left:auto;
-				margin-right:auto;
-				margin-top:60px;
-				width:980px;
-			}
-
-			body > footer {
-				margin-top:120px;
-				font-size:12px;
-			}
-
-			#call-to-action {
-				font-size:20px;
-				text-align:center;
-				display:block;
-			}
-		</style>
+		<title>Unicode For Us</title>
 		<script type="text/javascript">
 		var gOverride = {
 			gColor: '#A9EEEE',
@@ -300,29 +16,34 @@
 		
 	</head>
 	<body>
-		<nav class="cf">
-			<h1>UnicodeForUs</h1>
-			<ul>
-				<li>
-					<a href="">Home</a>
-				</li>
-				<li>
-					<a href="">Characters</a>
-				</li>
-			</ul>
+		<nav id="main" class="cf">
+			<div>
+				<h1><a href="/">UnicodeForUs</a></h1>
+				<ul>
+					<li>
+						<a href="">Home</a>
+					</li>
+					<li>
+						<a href="">Characters</a>
+					</li>
+					<li>
+						<a href="">About</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 			
 		<header>
 			<h2>
 				UnicodeForUs is the repository of fun unicode characters that belongs to everyone!
-				<div>(By which I mean it's Creative Commons licensed.)</div>
+				<div>(By which I mean it's Creative Commons licensed)</div>
 			</h2>
 		</header>
 		<section class="inner " id="promos">
 			<ul class="cf">
-				<li>Experience thrilling unicode characters such as <span class="unicode">☃, ★, ☁, and ✈</span>!</li>
-				<li>Fork the repo and submit a pull request to add your favorites!</li>
-				<li>Find the characters you need in search when you need them, forever!</li>
+				<li data-icon="☃">Experience thrilling unicode characters such as <span class="unicode">☃, ★, ☁, and ✈</span>!</li>
+				<li data-icon="&#xe000;"><a href="https://github.com/dtb/unicodeforus-">Fork the repo</a> and submit a pull request to add your favorites!</li>
+				<li data-icon="&#xe001;">Find the characters you need in search when you need them, forever!</li>
 			</ul>
 		</section>
 		<section>
