@@ -94,7 +94,7 @@
 	h1,h2,h3,h4,h5,h6 {
 		margin:.5em 0 .25em 0; 
 		line-height:1;
-		font-weight:bold;
+		font-weight:normal;
 	}
 	p, ul, ol, dl {
 		margin:.2em 0 1em 0;
@@ -129,7 +129,6 @@
 	*/
 	body {
 		font-size:100%;
-		line-height:1.15em;
 		font-family:sans-serif;
 	}
 	body>*{
