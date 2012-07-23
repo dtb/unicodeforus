@@ -7,3 +7,4 @@ find .  -not -path  '*_site*' -not -path '*.git*' -not -path "." -prune -exec rm
 mv _site/* .
 rm -rf _site
 rm build.sh
+find . -name "*.html" -exec sed -i '' -e 's/href="\//href="\/unicodeforus\//g' {} \;
