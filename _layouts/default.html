@@ -17,7 +17,11 @@ layout: default
 		};
 		</script>
 		
-		<title>{{ page.title }}</title>
+		{% if page.character %}
+			<title>Unicode {{ page.name }}—UnicodeForUs, open-source unicode character repository </title>
+		{% else %}
+			<title>{{ page.title }}</title>
+		{% endif %}
 	</head>
 	<body>
 		<nav id="main" class="cf">
@@ -31,13 +35,40 @@ layout: default
 						<a href="">Characters</a>
 					</li>
 					<li>
-						<a href="">About</a>
+						<a href="/about.html">About</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 
-		{{ content }}
+		{% if page.character %}
+			<section class="character-page">
+				<h2>Unicode {{ page.name }}</h2>
+ 				<div class="character">
+					{{ page.character }}
+				</div>
+				<div class="character-details">
+					<h3>Character utilities</h3>
+					<ul>
+						<li>
+							<label>Copy-paste field <input value="{{ page.character }}" /></label>
+						</li>
+						<li>
+							<a href="http://www.fileformat.info/info/unicode/char/{{ page.code }}/index.htm">
+								Technical information from FileFormat.info
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+			</section>
+		{% else %}
+			{{ content }}
+		{% endif %}
+
+		<footer>
+			Created by <a href="http://davidthomasbernal.com">david thomas bernal</a>
+		</footer>
 
 	</body>
 </html>
