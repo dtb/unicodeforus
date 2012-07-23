@@ -1,0 +1,190 @@
+	html, body, div, span, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	abbr, address, cite, code,
+	del, dfn, em, img, ins, kbd, q, samp,
+	small, strong, sub, sup, var,
+	b, i,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section, summary,
+	time, mark, audio, video {
+			margin:0;
+			padding:0;
+			border:0;
+			outline:0;
+			font-size:100%;
+			vertical-align:baseline;
+			background:transparent;
+	}
+
+	body {
+			line-height:1;
+	}
+
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,menu,nav,section { 
+			display:block;
+	}
+
+	nav ul {
+			list-style:none;
+	}
+
+	blockquote, q {
+			quotes:none;
+	}
+
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+			content:'';
+			content:none;
+	}
+
+	a {
+			margin:0;
+			padding:0;
+			font-size:100%;
+			vertical-align:baseline;
+			background:transparent;
+	}
+
+	/* change colours to suit your needs */
+	ins {
+			background-color:#ff9;
+			color:#000;
+			text-decoration:none;
+	}
+
+	/* change colours to suit your needs */
+	mark {
+			background-color:#ff9;
+			color:#000; 
+			font-style:italic;
+			font-weight:bold;
+	}
+
+	del {
+			text-decoration: line-through;
+	}
+
+	abbr[title], dfn[title] {
+			border-bottom:1px dotted;
+			cursor:help;
+	}
+
+	table {
+			border-collapse:collapse;
+			border-spacing:0;
+	}
+
+	/* change border colour to suit your needs */
+	hr {
+			display:block;
+			height:1px;
+			border:0;		
+			border-top:1px solid #cccccc;
+			margin:1em 0;
+			padding:0;
+	}
+
+	body {
+	}
+	h1,h2,h3,h4,h5,h6 {
+		margin:.5em 0 .25em 0; 
+		line-height:1;
+		font-weight:normal;
+	}
+	p, ul, ol, dl {
+		margin:.2em 0 1em 0;
+	}
+	ul,ol,dl {
+		margin-top:1em;
+	}
+	blockquote{
+		margin: .75em 1.3em;
+	}
+
+	/*
+	* Lists
+	*/
+	ul {
+		list-style-type: circle;
+	}
+	ol {
+		list-style-type: decimal;
+	}
+	ul, ol {
+	}
+	ul ul, ol ul {
+		margin-top:.2em;
+	}
+	dd {
+		margin-left:1.3em;
+	}
+
+	/*
+	* basic typography
+	*/
+	body {
+		font-size:100%;
+		font-family:sans-serif;
+	}
+	body>*{
+		font-size:.875em;/* .875*16px=14px font-size:100% corresponds to 16px*/
+	}
+	h1{
+		font-size:1.3em;
+	}
+	h2{
+		font-size:1.2em;
+	}
+	h3{
+		font-size:1.1em;
+	}
+	h4 {
+		font-size:1em;
+	}
+	/*
+	* semantic inline elements
+	*/
+	abbr,acronym {
+		border-bottom: 1px dotted #AAA;
+	}
+	sub{
+		vertical-align: sub;
+		font-size:.8em;
+	}
+	sup{
+		vertical-align: super;
+		font-size:.8em;
+	}
+	/*
+	* Semantic elements and their equivalents
+	*/
+	samp, var, pre, code, tt{
+		font-family: monospace, monospace;
+		white-space: pre;
+	} 
+	s, del{
+		text-decoration: line-through;
+	} 
+	i, em, cite, dfn{
+		font-style: italic;
+	} 
+	b, strong, th{
+		font-weight: bold;
+	}
+	ins, u {
+		text-decoration: underline;
+	}
+	/*
+	* Non-semantic elements
+	*/
+	small {
+		font-size:.7em;
+	}
+	big {
+		font-size:1.3em;
+	}
