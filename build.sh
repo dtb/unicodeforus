@@ -9,4 +9,4 @@ rm -rf _site
 rm build.sh char.py readme.md
 #find . -name "*.html" -exec sed -i '' -e 's/href="\//href="\/unicodeforus\//g' {} \;
 
-echo "Built site\n"
+echo "Built site"
