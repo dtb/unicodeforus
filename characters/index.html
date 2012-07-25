@@ -4,13 +4,16 @@ title: Fun unicode characters—UnicodeForUs, open repository of fun unicode cha
 ---
 
 <section class="characters cf">
-	<h2>Fun unicode characters</h2>
+	<h2>Check out our many unicode characters</h2>
 	<ul>
 	{% for page in site.pages %}
 		{% if page.character %}
 			<li>
 				<a href="{{ page.url }}">
 					{{ page.character }}
+					<div class="label">
+						{{ page.name }}
+					</div>
 				</a>
 			</li>
 		{% endif %}
