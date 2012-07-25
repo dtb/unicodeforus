@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 import sys
+import re
 
 if len(sys.argv) != 3:
 	print("You gotta specify a character to print and its name!")
@@ -18,7 +19,7 @@ code: {2:X}
 ---
 """.format(char, charName, ord(char))
 
-fname = charName.lower() + ".html"
+fname = "./characters/" + re.sub('[^\w0-9]+', '-', charName.lower()) + ".html"
 
 f = open(fname, 'w')
 f.write(string.strip().encode('utf-8'))
