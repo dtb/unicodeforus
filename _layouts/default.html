@@ -42,25 +42,29 @@ layout: default
 		</nav>
 
 		{% if page.character %}
-			<section class="character-page">
+			<section class="cf character-page">
 				<h2>Unicode {{ page.name }}</h2>
- 				<div class="character">
-					{{ page.character }}
+				<div class="character">
+						{{ page.character }}
 				</div>
-				<div class="character-details">
-					<h3>Character utilities</h3>
-					<ul>
-						<li>
-							<label>Copy-paste field <input value="{{ page.character }}" /></label>
-						</li>
-						<li>
-							<a href="http://www.fileformat.info/info/unicode/char/{{ page.code }}/index.htm">
-								Technical information from FileFormat.info
-							</a>
-						</li>
-					</ul>
+				<ul class="character-details">
+					<li>
+						<label>Copy-paste field <input value="{{ page.character }}" /></label>
+					</li>
+					<li>
+						Unicode code point: U+{{ page.code }}
+					</li>
+					<li>
+						<a href="http://www.fileformat.info/info/unicode/char/{{ page.code }}/index.htm">
+							Technical information from FileFormat.info
+						</a>
+					</li>
+				</ul>
+
+				<a class="see-more" href="/characters">
+					← See more characters
+				</a>
 					
-				</div>
 			</section>
 		{% else %}
 			{{ content }}
