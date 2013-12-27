@@ -1,8 +1,8 @@
 #! /bin/bash -e
 
-git co master
+git checkout master
 jekyll
-git co gh-pages
+git checkout gh-pages
 find .  -not -path  '*_site*' -not -path '*.git*' -not -path "." -prune -exec rm -rf {} \;
 mv _site/* .
 rm -rf _site
